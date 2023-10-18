@@ -3,6 +3,9 @@ import "./App.css";
 import Material from "./Material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { orange, purple } from "@mui/material/colors";
+import Slider from "@mui/material/Slider";
+
+import AcUnitIcon from "@mui/icons-material/AcUnit";
 
 const theme = createTheme({
   status: {
@@ -22,7 +25,7 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div className="App" style={{ marginTop: "300px", marginLeft: "200px" }}>
+      <div className="App" style={{ width: "70%", margin: "100px auto" }}>
         <Material />
       </div>
     </ThemeProvider>
